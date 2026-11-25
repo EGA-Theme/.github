@@ -1,0 +1,34 @@
+name: Câu hỏi hoặc cần hỗ trợ
+description: Hỏi cách dùng, cách thiết lập, hoặc nhờ hỗ trợ. Không phải lỗi hay yêu cầu tính năng.
+title: "[Hỏi] <câu hỏi>"
+labels: ["hỗ trợ"]
+projects: ["EGA-Theme/1"]
+body:
+  - type: dropdown
+    id: nen-tang
+    attributes:
+      label: Nền tảng
+      options:
+        - Sapo
+        - Haravan
+        - Cả hai
+        - Không liên quan
+    validations:
+      required: true
+  - type: textarea
+    id: cau-hoi
+    attributes:
+      label: Câu hỏi
+      description: Cần biết hoặc cần giúp điều gì. Một câu hỏi một issue.
+    validations:
+      required: true
+  - type: textarea
+    id: boi-canh
+    attributes:
+      label: Bối cảnh
+      description: Đang làm ở trang nào, nhóm thiết lập nào, store nào. Có ảnh chụp thì dán vào.
+  - type: textarea
+    id: da-thu
+    attributes:
+      label: Đã thử gì
+      description: Các cách đã thử và kết quả, để người trả lời không phải gợi lại.
