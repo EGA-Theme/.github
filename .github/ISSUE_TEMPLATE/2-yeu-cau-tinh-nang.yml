@@ -1,0 +1,45 @@
+name: Yêu cầu tính năng hoặc cải tiến
+description: Đề xuất thêm một tính năng mới hoặc cải tiến một phần đang có của theme.
+title: "[Sapo] <tính năng muốn có>"
+labels: ["enhancement"]
+projects: ["EGA-Theme/1"]
+body:
+  - type: dropdown
+    id: nen-tang
+    attributes:
+      label: Nền tảng
+      options:
+        - Sapo
+        - Haravan
+        - Cả hai
+    validations:
+      required: true
+  - type: textarea
+    id: van-de
+    attributes:
+      label: Vấn đề hiện tại
+      description: Người mua hoặc chủ shop đang gặp khó gì khi chưa có tính năng này.
+    validations:
+      required: true
+  - type: textarea
+    id: de-xuat
+    attributes:
+      label: Đề xuất
+      description: Tính năng hoạt động ra sao, người dùng thấy và thao tác gì. Có ảnh mẫu hoặc link theme khác thì dán vào.
+    validations:
+      required: true
+  - type: textarea
+    id: da-co-san
+    attributes:
+      label: Khối hoặc thiết lập đã có thể dùng lại
+      description: Theme đã có khối, thiết lập hay thành phần nào gần giống. Ghi nếu biết, để sửa ít nhất.
+  - type: dropdown
+    id: do-uu-tien
+    attributes:
+      label: Mức ưu tiên
+      options:
+        - Cần cho đợt nộp này
+        - Làm khi có thời gian
+        - Ý tưởng, chưa chốt
+    validations:
+      required: true

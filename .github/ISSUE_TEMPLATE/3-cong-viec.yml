@@ -1,0 +1,30 @@
+name: Công việc
+description: Một việc cần làm không phải lỗi hay tính năng, ví dụ dựng dữ liệu demo, đóng gói, cấu hình store.
+title: "<việc cần làm>"
+labels: ["task"]
+projects: ["EGA-Theme/1"]
+body:
+  - type: textarea
+    id: van-de
+    attributes:
+      label: Vấn đề
+      description: Vì sao việc này xuất hiện.
+    validations:
+      required: true
+  - type: textarea
+    id: cach-lam
+    attributes:
+      label: Các cách đã cân nhắc và quyết định
+      description: Cách đã chọn và vì sao chọn. Chưa chốt thì để trống, ghi sau bằng bình luận.
+  - type: textarea
+    id: xong-khi-nao
+    attributes:
+      label: Xong khi nào
+      description: Mỗi dòng một điều kiện kiểm được, ví dụ "Trang chủ hiện đủ 8 sản phẩm demo".
+    validations:
+      required: true
+  - type: input
+    id: han
+    attributes:
+      label: Hạn
+      placeholder: "yyyy/mm/dd"

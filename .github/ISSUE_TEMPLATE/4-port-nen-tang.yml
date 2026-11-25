@@ -1,0 +1,35 @@
+name: Chuyển sang nền tảng khác
+description: Đưa một thay đổi đã làm ở bản Sapo sang Haravan, hoặc ngược lại.
+title: "[Haravan] Chuyển <thay đổi> từ Sapo"
+labels: ["port"]
+projects: ["EGA-Theme/1"]
+body:
+  - type: input
+    id: nguon
+    attributes:
+      label: Issue hoặc commit gốc
+      description: Thay đổi đã làm xong ở nền tảng nguồn.
+      placeholder: "#12 hoặc mã commit"
+    validations:
+      required: true
+  - type: dropdown
+    id: huong
+    attributes:
+      label: Hướng chuyển
+      options:
+        - Sapo sang Haravan
+        - Haravan sang Sapo
+    validations:
+      required: true
+  - type: textarea
+    id: khac-biet
+    attributes:
+      label: Điểm khác giữa hai nền tảng cần lưu ý
+      description: Cú pháp template, thiết lập, hoặc giới hạn của nền tảng đích ảnh hưởng tới cách chuyển.
+  - type: textarea
+    id: kiem
+    attributes:
+      label: Cách kiểm sau khi chuyển
+      description: Mở trang nào trên store của nền tảng đích và thấy gì thì đạt.
+    validations:
+      required: true

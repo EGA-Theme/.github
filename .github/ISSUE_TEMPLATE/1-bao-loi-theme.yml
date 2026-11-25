@@ -1,0 +1,68 @@
+name: Báo lỗi theme
+description: Lỗi thấy khi kiểm theme mà không ghi được trên trang rà soát.
+title: "[Sapo] <điều đang thấy>"
+labels: ["bug"]
+projects: ["EGA-Theme/1"]
+body:
+  - type: input
+    id: dot
+    attributes:
+      label: Thuộc đợt
+      placeholder: "#<số issue đợt>"
+  - type: dropdown
+    id: noi-thay
+    attributes:
+      label: Nơi thấy lỗi
+      options:
+        - Trình chỉnh sửa theme
+        - Trang ngoài cửa hàng
+    validations:
+      required: true
+  - type: input
+    id: trang
+    attributes:
+      label: Trang hoặc đường dẫn, nhóm thiết lập
+      placeholder: "Ví dụ: trang giỏ hàng, nhóm thiết lập Popup"
+  - type: dropdown
+    id: kho
+    attributes:
+      label: Khổ màn hình
+      options:
+        - Máy tính
+        - Điện thoại
+        - Cả hai
+    validations:
+      required: true
+  - type: textarea
+    id: da-lam
+    attributes:
+      label: Đã làm gì
+      description: Các bước dẫn tới lỗi, đủ để người sửa làm lại được.
+  - type: textarea
+    id: thay
+    attributes:
+      label: Thấy gì
+    validations:
+      required: true
+  - type: textarea
+    id: mong-doi
+    attributes:
+      label: Mong đợi gì
+    validations:
+      required: true
+  - type: dropdown
+    id: muc-do
+    attributes:
+      label: Mức độ
+      description: "Chặn: không dùng được. Cần sửa: sai nhưng vẫn dùng được. Góp ý: đề xuất cải thiện."
+      options:
+        - Chặn
+        - Cần sửa
+        - Góp ý
+    validations:
+      required: true
+  - type: textarea
+    id: anh
+    attributes:
+      label: Ảnh chụp
+      description: Kéo ảnh vào đây hoặc dán đường dẫn Drive.
